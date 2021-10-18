@@ -1,2 +1,0 @@
-# bananahackers
-bananahackers.net
