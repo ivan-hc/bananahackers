@@ -1,2 +1,1 @@
-# bananahackers
-bananahackers.net
+# BananaHackers.net - JOIN THE REVOLUTION!
