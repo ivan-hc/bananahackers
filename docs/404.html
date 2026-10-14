@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Redirecting...</title>
+		<script>
+			(function () {
+				var target = "https://bananahackers.net";
+				var repoPrefix = "bananahackers";
+				var path = window.location.pathname;
+
+				if (repoPrefix) {
+					var prefix = "/" + repoPrefix.replace(/^\/|\/$/g, "");
+					if (path.indexOf(prefix) === 0) {
+						path = path.slice(prefix.length);
+					}
+				}
+
+				var destination =
+					target +
+					path +
+					window.location.search +
+					window.location.hash;
+				window.location.replace(destination);
+			})();
+		</script>
+	</head>
+	<body>
+		<p>
+			Redirecting to <a href="https://bananahackers.net">bananahackers.net</a>
+		</p>
+	</body>
+</html>
